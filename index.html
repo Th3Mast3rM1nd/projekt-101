@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Photography Website</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Fuggles&family=Lato:wght@100&family=Merriweather:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="./logos/main-logo.svg" alt="Photography Logo"/>
+        </div>
+        <nav>
+            <!-- Menu Icon for Mobile -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <!-- Top Menu for Desktop -->
+            <div class="top-menu">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="page-title">
+            <h1>
+                Photography as a <span>Hobby</span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Navigation Section (Bottom Menu) -->
+    <nav>
+        <div class="bottom-menu">
+            <img src="./logos/forest.svg" alt="Landscape Photography">
+            <img src="./logos/Buldings.svg" alt="Architectural Photography">
+            <img src="./logos/animals.svg" alt="Wildlife Photography">
+        </div>
+    </nav>
+    <script>
+// Get the menu icon element
+const menuIcon = document.getElementById('menu-icon');
+
+// Get the top menu nav element
+const topMenuNav = document.querySelector('.top-menu');
+
+// Add an event listener to the menu icon for click
+menuIcon.addEventListener('click', () => {
+// Toggle the "active" class on menuIcon and topMenuNav
+    menuIcon.classList.toggle('active');
+    topMenuNav.classList.toggle('active');
+});
+    </script>
+        <div class="content">
+            <main>
+            <h1>Graceful Blooms of <span>Iris Sanguinea</span></h1>
+            <img src="./images/bild1.png" alt="flower">
+            </main>      
+            <aside>
+            <article>
+                <h1>Photography Is A <span>Passion</span></h1>
+            <p>Photography is the art, application, and practice of creating <strong>images</strong>  by recording light, either electronically by means of an <strong>image</strong> sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication.
+
+                Typically, a lens is used to focus the light reflected or emitted from objects into a real <strong>image</strong> on the light-sensitive surface inside a camera during a timed exposure. With an electronic <strong>image</strong> sensor, this produces an electrical charge at each pixel, which is electronically processed and stored in a digital  image file for subsequent display or processing. The result with photographic emulsion is an invisible latent image, which is later chemically "developed" into a visible image, either negative or positive, depending on the purpose of the photographic material and the method of processing. A negative image on film is traditionally used to photographically create a positive <strong>image</strong> on a paper base, known as a print, either by using an enlarger or by contact printing. </p>
+            <div class="source-link">
+            <a href="https://en.wikipedia.org/wiki/Photography" target="_blank">Source: Wikipedia</a>
+            </div>
+            </article>
+            </aside>
+        </div>
+        <footer>
+            <div class="footer-title">
+                <h1>Seeing the World Through a <span>Camera Lens</span> </h1>
+            </div>
+            <div class="footer-email">
+                <email>youssef.khouda@bbzbl-it.ch</email>
+            </div>
+            <div class="footer-logos">
+                <ul>
+                    <li><a href="#"><img src="./logos/instagram.svg" alt="instagram logo"></a></li>
+                    <li><a href="#"><img src="./logos/facebook.svg" alt="facebook logo"></a></li>
+                    <li><a href="#"><img src="./logos/github.svg" alt="github logo"></a></li>
+                </ul>
+            </div>
+        </footer>
+
+</body>
+</html>
